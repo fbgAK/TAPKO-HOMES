@@ -92,8 +92,14 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 2rem; /* Original value for desktop */
   background-color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .section-title::after {
+    top: 2.5rem; /* Adjusted value for mobile view */
+  }
 }
 
 .section {
