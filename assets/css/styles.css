@@ -74,6 +74,21 @@ img {
   display: block;
 }
 
+/* Base section styles */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Alternating background colors */
+.section:nth-of-type(odd) {
+  background-color: #f9f9f9; /* Light background for odd sections */
+}
+
+.section:nth-of-type(even) {
+  background-color: #ffffff; /* White background for even sections */
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
