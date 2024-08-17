@@ -447,22 +447,37 @@ body {
   }
 }
 
-/* ===== WORK =====*/
+/* ===== WORK ===== */
 
 .work__container {
-  row-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.work__item {
   text-align: center;
 }
-.work__subtitle {
-  margin-bottom: var(--mb-2);
-}
+
 .work__img {
-  justify-self: center;
+  width: 350px;  /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Ensures images fit into the rectangle without distortion */
+  margin-bottom: 1rem;
+  border-radius: 8px; /* Optional: Add some rounding to the corners */
 }
-.work__img img {
-  width: 200px;
-  border-radius: 0.5rem;
+
+.work__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--first-color);
 }
+
+.work__text {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {
